@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Shadows+Into+Light&display=swap');
 
+:root{
+  --bg-color: #303030;
+  --text-color: #cccccc;
+}
+
 body {
-  background-color: #303030;
-  color: #cccccc;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 
   font-family: 'Inconsolata', monospace;
 
@@ -16,10 +21,17 @@ body {
   justify-content: center;
 }
 
+@media screen and (max-device-width: 974px) {
+  .cv-image {
+    display: none;
+  }
+}
+
+
 .first-line .cv-image {
   /* width: 25vw; */
   aspect-ratio: 3/4;
-  height: 35vh;
+  height: 35vw;
 
   margin: 2rem;
   border-radius: 5rem;
@@ -44,7 +56,7 @@ body {
 .first-line .info table {
   padding: 1rem;
 
-  border: #cccccc 1px solid;
+  border: var(--text-color) 1px solid;
   border-top-right-radius: 5rem;
   border-bottom-left-radius: 2.5rem;
 }

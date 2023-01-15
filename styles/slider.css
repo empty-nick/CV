@@ -5,7 +5,6 @@
   display: flex;
   justify-content: space-evenly;
 
-  /* border: 1px solid #fff; */
   padding: .5rem;
 }
 
@@ -31,7 +30,6 @@
 
   color: #dadada;
 
-  /* border: 1px solid #fff; */
   border-radius: 2rem;
   padding: .7rem;
 
@@ -63,22 +61,22 @@
 }
 
 [data-tooltip] {
-  position: absolute; /* Относительное позиционирование */ 
+  position: absolute; 
  }
 
 [data-tooltip]::after {
-  content: attr(data-tooltip); /* Выводим текст */
-  position: absolute; /* Абсолютное позиционирование */
-  width: 15vw; /* Ширина подсказки */
-  right: 0; top: 0; /* Положение подсказки */
-  background: #292929a2; /* Синий цвет фона */
+  content: attr(data-tooltip);
+  position: absolute;
+  width: 15vw;
+  right: 0; top: 0;
+  background: #292929a2; 
   border: #1f1f1f solid 2px;
   border-radius: 2rem;
-  color: #dadada; /* Цвет текста */
-  padding: 0.2em; /* Поля вокруг текста */
-  pointer-events: none; /* Подсказка */
-  opacity: 0; /* Подсказка невидима */
-  transition: 1s; /* Время появления подсказки */
+  color: #dadada; 
+  padding: 0.2em; 
+  pointer-events: none; 
+  opacity: 0;
+  transition: 1s;
 }
 
 [data-tooltip]:hover::after {

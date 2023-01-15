@@ -9,6 +9,17 @@
   flex-direction: column;
 }
 
+@media screen and (max-device-width: 800px) {
+  .about-me{
+    position: relative;
+    display: flex;
+  
+    margin: 1rem 5rem;
+  
+    flex-direction: column;
+  }
+}
+
 .about-me h1{
   font-family: 'Inconsolata', monospace;
   margin-top: 1rem;
