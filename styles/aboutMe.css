@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+.about-me{
+  position: relative;
+  display: flex;
+
+  margin: 1rem 10rem;
+
+  flex-direction: column;
+}
+
+.about-me h1{
+  font-family: 'Inconsolata', monospace;
+  margin-top: 1rem;
+  margin-bottom: .2rem;
+}
+
+.about-me ul{
+ margin-top: 0;
+}
+
+.about-me li{
+  font-family: 'Inconsolata', monospace;
+  margin-top: 0;
+  letter-spacing: 1px;
+  list-style-type: disc;
+}
+
+.about-me .text-about{
+  font-family: 'Inconsolata', monospace;
+  margin: .3rem 0;
+}

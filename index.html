@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/slider.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+    <link rel="stylesheet" href="/styles/icons.css" />
+    <link rel="stylesheet" href="/styles/aboutMe.css" />
+    <link rel="stylesheet" href="/styles/scroll.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maksim Litevko</title>
+  </head>
+  <body>
+    <div class="first-line">
+      <img src="./img/me.png" alt="My photo" class="cv-image" />
+
+      <div class="info">
+        <h1>Основная информация:</h1>
+
+        <table>
+          <tr>
+            <td class="title">ФИО:</td>
+            <td class="res">Бобровник Максим Игоревич</td>
+          </tr>
+          <tr>
+            <td class="title">Дата рождения:</td>
+            <td class="res">11.10.2000</td>
+          </tr>
+          <tr>
+            <td class="title">Образование:</td>
+            <td class="res">Минский Инновационный Университет (2018-2022)</td>
+          </tr>
+          <tr>
+            <td class="title">Специальность:</td>
+            <td class="res">Программист-инженер</td>
+          </tr>
+          <tr>
+            <td class="title">Доп. образование:</td>
+            <td class="res">
+              IBA Institute, "Программирование на языке JavaScript"
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="social-media">
+        <a href="https://github.com/empty-nick" target="_blank"
+          ><img src="./img/icons/github.png" alt="Github" class="sm-icon"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/maksim-litevko-991a0623b/"
+          target="_blank"
+          ><img src="./img/icons/linkedin.png" alt="LinkedIn" class="sm-icon"
+        /></a>
+        <a href="https://t.me/emp_ty_me" target="_blank"
+          ><img src="./img/icons/telegram.png" alt="Telegram" class="sm-icon"
+        /></a>
+        <a href="mailto:maxim99933@gmail.com" target="_blank"
+          ><img src="./img/icons/gmail.png" alt="GMail" class="sm-icon"
+        /></a>
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="block">
+        <p class="help-icon" data-tooltip="Увеличиваемое изображение">!</p>
+        <img
+          src="./img/diploma.jpg"
+          alt="Диплом"
+          class="slider-img"
+          onclick="modal(true, './img/diploma.jpg')" />
+        <p class="text-about">Университет</p>
+      </div>
+
+      <div class="block">
+        <p class="help-icon" data-tooltip="Увеличиваемое изображение">!</p>
+        <img
+          src="./img/sert.jpg"
+          alt="Сертефикат"
+          class="slider-img"
+          onclick="modal(true, './img/sert.jpg')" />
+        <p class="text-about">Доп. образование</p>
+      </div>
+
+      <div class="block">
+        <p class="help-icon" data-tooltip="Увеличиваемое изображение">!</p>
+        <img
+          src="./img/codewars.jpg"
+          alt="Сертефикат"
+          class="slider-img"
+          onclick="modal(true, './img/codewars.jpg')" />
+        <p class="text-about">Практика на CodeWars</p>
+      </div>
+
+      <div class="block">
+        <p class="help-icon" data-tooltip="Увеличиваемое изображение">!</p>
+        <img
+          src="./img/english.jpg"
+          alt="Сертефикат"
+          class="slider-img"
+          onclick="modal(true, './img/english.jpg')" />
+        <p class="text-about">Уровень английского</p>
+      </div>
+    </div>
+
+    <div class="about-me">
+      <h1>Обо мне</h1>
+      <p class="text-about">
+        Привет! Меня зовут Максим. Я занимаюсь веб-разработкой и хочу расти в
+        этой области как специалист. Мне интересен процесс создания и
+        поддержания веб-приложения в рабочем состоянии.<br /><br />
+        В феврале 2022 года я пошел на курсы в Institute IBA по направлению
+        JavaScript. Эти курсы мне очень сильно помогли. Они дали мне понять, что
+        нужно лишь почитать документацию и, даже не знаю той или иной
+        технологии, можно с ней работать. Также я проходил преддипломную
+        практику в Institute IBA. Для дипломной работы я разрабатывал
+        веб-приложение для института.
+      </p>
+
+      <h1>Навыки</h1>
+      <p class="text-about">
+        Разрабатвыаю собствнные небольшие проекты с использованием таких
+        технологий, как:
+      </p>
+      <ul>
+        <li>React</li>
+        <li>Angular</li>
+        <li>Vue</li>
+        <li>Node</li>
+        <li>TypeScript</li>
+        <li>SQL</li>
+      </ul>
+      <p class="text-about">
+        Последние мои проекты: <br /><br />
+        1. Веб-приложение для заметок. В разработке использовал React,
+        TypeScript. В приложении можно добавлять, удалять и изменять заметки.<br />
+        2. Тестовое задание. В разработке необходимо было использовать Angular,
+        TypeScript и RouterLink. Приложение читало JSON файл и выводила
+        отсортированные данные.
+      </p>
+
+      <h1>Обучение в университете</h1>
+      <p class="text-about">
+        В университет я поступил в 2018 году на специальность "Программное
+        обеспечение информационных технологий". Обучение в университете
+        проходило зачастую гладко, хотя были и сложные периоды. <br /><br />
+        Обучение в университете не давало мне возможности понять чем я хочу
+        заниматься, поэтому я начал сам изучать направлния в IT и понял, что мне
+        больше всего нравится Web-разработка. <br /><br />
+        Изучение web-технологий в университете сводилось к 1 семестру для
+        изучения JavaScript, поэтому изучение web-технологий проходило в
+        интернете. Это дало мне понять, что всё есть интернете.
+      </p>
+
+      <h1>Цели на будущее</h1>
+      <p class="text-about">
+        На ближайшее будущее моя главная цель - найти работу/стажировку, чтобы
+        продолжить моё развите, как Web-разработчика. Мне нравится
+        Web-разработка и я очень хочу стать разработчиком. Я готов приложить все
+        усилия, затратить любое время, чтобы добиться успеха в этой области!
+      </p>
+
+      <h1>Хобби и увлечения</h1>
+      <p class="text-about">
+        В свободное время я люблю решать задачи на CodeWars, смотреть сериалы,
+        аниме и фильмы. Увлекаюсь видеоиграми. Люблю слушать музыку, параллельно
+        делая что-либо. Из любимых групп, мне нравятся песни Linkin Park,
+        особенно люблю их песни Numb, Castl of Glass и In the End.
+      </p>
+    </div>
+
+    <div class="modal"></div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
