@@ -116,9 +116,7 @@ body {
   }
 }
 
-/* fvdxv */
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
-
+/* About */
 .about-me{
   position: relative;
   display: flex;
