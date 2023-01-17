@@ -79,3 +79,39 @@ body {
   display: flex;
   align-items: center;
 }
+
+
+.first-line .social-media {
+  position: relative;
+  display: flex;
+  padding: 1rem;
+
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  border: 0px solid #cccccc;
+  width: 100px;
+}
+
+.sm-icon {
+  margin: .3rem;
+  width: 50px;
+  height: 42px;
+  user-select: none;
+  margin-bottom: .5rem;
+
+  /* height: 5vh; */
+  aspect-ratio: 4/3;
+}
+
+@media screen and (max-device-width: 554px) {
+  .first-line {
+    flex-direction: column;
+  }
+  .first-line .social-media{
+    width: 90vw;
+    flex-direction: row;
+    justify-content: normal;
+  }
+}
