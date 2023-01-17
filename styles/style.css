@@ -115,3 +115,183 @@ body {
     justify-content: normal;
   }
 }
+
+/* fvdxv */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+.about-me{
+  position: relative;
+  display: flex;
+
+  margin: 1rem 10rem;
+
+  flex-direction: column;
+}
+
+@media screen and (max-device-width: 800px) {
+  .about-me{
+    position: relative;
+    display: flex;
+  
+    margin: 1rem 5rem;
+  
+    flex-direction: column;
+  }
+}
+
+.about-me h1{
+  font-family: 'Inconsolata', monospace;
+  margin-top: 1rem;
+  margin-bottom: .2rem;
+}
+
+.about-me ul{
+ margin-top: 0;
+}
+
+.about-me li{
+  font-family: 'Inconsolata', monospace;
+  margin-top: 0;
+  letter-spacing: 1px;
+  list-style-type: disc;
+}
+
+.about-me .text-about{
+  font-family: 'Inconsolata', monospace;
+  margin: .3rem 0;
+}
+
+/* gvfd */
+.modal{
+  position: absolute;
+}
+
+.modal .modal-div{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 0;
+  left: 0;
+  
+  background-color: #292929ee;
+
+  width: 100%;
+  height: 100%;
+}
+
+.modal .modal-div img{
+  aspect-ratio: 3/2;
+  margin: 1rem;
+  width: 60vw;
+
+  cursor: zoom-out;
+}
+
+/* bvgfdx */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0e0e0e; 
+  border-radius: 2rem;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a0a0a0; 
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #747474 
+}
+
+/* vfgdxv */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+.slider{
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+
+  padding: .5rem;
+}
+
+.slider .block{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider .block .slider-img{
+  user-select: none;
+  border-radius: 1.5rem;
+  width: 20vw;
+  aspect-ratio: 3/2;
+  cursor: zoom-in;
+}
+
+.slider .block .text-about{
+  position: absolute;
+  bottom: -.7rem;
+  background-color: #292929a2;
+
+  color: #dadada;
+
+  border-radius: 2rem;
+  padding: .7rem;
+
+  font-size: 1.5vw;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+}
+
+.help-icon{
+  user-select: none;
+  position: absolute;
+  border: #292929 solid 2px;
+  background-color: #dadadad3;
+  border-radius: 100%;
+  color: #111111;
+
+  font-size: 1vw;
+  font-weight: 800;
+
+  width: 1vw;
+  text-align: center;
+
+  cursor: pointer;
+
+  right: 0;
+  top: 0;
+  margin: .5rem;
+  padding: .5rem;
+}
+
+[data-tooltip] {
+  position: absolute; 
+ }
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  width: 15vw;
+  right: 0; top: 0;
+  background: #292929a2; 
+  border: #1f1f1f solid 2px;
+  border-radius: 2rem;
+  color: #dadada; 
+  padding: 0.2em; 
+  pointer-events: none; 
+  opacity: 0;
+  transition: 1s;
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+  top: 2em; 
+}
